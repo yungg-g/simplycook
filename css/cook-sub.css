@@ -1,0 +1,56 @@
+/*COOK 담기/바로결제*/
+#wrap>#cooklnb{width: 95%; max-width: 414px; /*height: 70px; 91.467%*/ background: #fff; border-radius: 15px 15px 0 0; position: fixed; bottom: 0; z-index: 999; box-shadow: 0 0 3px grey;}
+#wrap>#cooklnb>ul>li{float: left; width: 50%; height: 100%; text-align: center;}
+#wrap>#cooklnb>ul>li>a{padding: 18px 0;}
+#wrap>#cooklnb>ul>li>a>img{height: 25px; vertical-align: bottom; margin-right: 10px;}
+#wrap>#cooklnb>ul>li>a>span{color: #124179; font-size: 20px;}
+
+/*수량선택박스*/
+.selectQuan{width: 100%; height: 55px;padding: 20px 30px 0; box-sizing: border-box; display: none;}
+.selectXbox{width: 50px; height: 50px; border-radius: 50%; background: #fff; margin-left: 50%; transform: translateX(-50%); position: fixed; bottom: 125px; z-index: 998; text-align: center; line-height: 50px; box-shadow: 0 0 3px grey; display: none;}
+.selectQuan>div>input{width: 35px; height: 35px; border-radius: 50%; float: left; font-size: 20px; color: #fff;}
+.selectQuan>input{float: left; width: 125px; height: 35px;border-radius: 17.5px; text-align: center;}
+.selectQuan>span{float: right; line-height: 35px;}
+
+
+/*스크롤시 상세보기,리뷰 고정*/
+.btnFixed{position: fixed; top: 48px; z-index: 998;}
+
+/*이미지슬라이드*/
+#wrap>#slider{width: 100%; height: 375px; background: skyblue; padding-top: 50px;}
+#wrap>#slider .swiper-slide>img{width: 100%;}
+
+/* COOK 메뉴 상세보기 머리부분*/
+#wrap>#cookDetail{height: 205px; background: #fff; top: 410px;}
+#wrap>#cookDetail>.center>h3, #wrap>#cookDetail>.center>h4{text-align: center; margin-bottom: 5px;}
+#wrap>#cookDetail>.center>h4{margin-bottom: 20px;}#wrap>#cookDetail>.center>h3>span>img{height: 18px; vertical-align: middle; margin-left: 10px;} #wrap>#cookDetail>.center>h4>span{margin-left: 40px;}
+#wrap>#cookDetail>.detailBtn{width: 100%; max-width: 414px; height: 50px; background: #DBEBFF;}
+#wrap>#cookDetail>.detailBtn>div{width: 50%; float: left; text-align: center; font-family: 'OSeongandHanEum'; font-size: 20px; line-height: 50px; font-weight: bolder;}#wrap>#cookDetail>.detailBtn>div>a{color: #124179;}
+.unPoint>a{color: #B8B8B8!important;}
+#wrap>#cookDetail>.detailBtn>div>span{line-height: 50px;}
+/* COOK 메뉴 상세보기 몸통부분*/
+#wrap>#cooking{height: 205px; background: #fff; top: 580px; padding-top: 15px;}
+#wrap>#cooking>.center>img{width: 100%; border-radius: 15px 15px 0 0;}
+/* COOK 리뷰*/
+#wrap>.reviewBs{height: 400px; top: 4700px;}/*백순대 리뷰 높이*/
+#wrap>.reviewCs{top: 4300px;}/*치킨스테이크 리뷰 높이*/
+#wrap>.reviewNgs{top: 5100px;}/*낙곱새 리뷰 높이*/
+#wrap>.reviewStk{top: 6500px;}/*스테이크 3종 리뷰 높이*/
+#wrap>.reviewSun{top: 4500px;}/*해물짬뽕순두부 리뷰 높이*/
+#wrap>#review>.center>div{width: 100%; height: 400px; border-radius: 15px 15px 0 0; border: 1px solid #DBEBFF;}
+#wrap>#review>.center>div>section{width: 100%; height: 100px; padding: 30px 20px 0; box-sizing: border-box;}
+#wrap>#review>.center>div>section>div{width: 100%;}
+#wrap>#review>.center>div>section>div>h3,#wrap>#review>.center>div>section>div>h5,#wrap>#review>.center>div>section>div>span{line-height: 25px;float: left; margin-right: 10px;font-size: 15px;}
+#wrap>#review>.center>div>section>div>p{font-size: 13px;}
+#wrap>#review>.center>div>section>div>h5{font-size: 13px; color: #B8B8B8;}
+#wrap>#review>.center>div>section>div>span{float: right; color: #FFCC00;}
+#wrap>#review>.center>div>section>p{clear: both;}
+#wrap>#review>.center>div>a>p{text-align: center; color: #B8B8B8; padding-top: 50px; font-size: 13px;}
+#wrap>#review>.center>div>a>img{height: 5px; margin-left: 50%; transform: translateX(-50%);}
+/* footer*/
+#wrap>#footer{position: absolute;}
+.footerBs{top: 5200px;}/*백순대 푸터 높이*/
+.footerCs{top: 4800px;}/*치킨스테이크 푸터 높이*/
+.footerNgs{top: 5600px;}/*낙곱새 푸터 높이*/
+.footerStk{top: 7000px;}/*스테이크 3종 푸터 높이*/
+.footerSun{top: 5000px;}/*해물짬뽕순두부 푸터 높이*/

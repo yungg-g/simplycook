@@ -1,0 +1,73 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none; display: block; width: 100%;}
+ul{list-style: none;}
+body{font-family: 'Noto Sans KR'; color: #124179;}
+@font-face { font-family: 'OSeongandHanEum'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OSeongandHanEum.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+#wrap{width: 375px; margin: 0 auto; position: relative;}
+.center{width: 343px; margin: 0 auto;}
+input{-webkit-appearance:none;}
+
+#wrap>#header{width: 375px; height: 50px; background: #fff; text-align: center; position: fixed; z-index: 999;}
+#wrap>#header>.center>div{width: 255px; float: left; margin-left: 44px;}
+
+#wrap>#header>.center>div>h1{float: left;}
+#wrap>#header>.center>div>h1>a>img{height: 20px; width: auto;}
+#wrap>#header>.center>div>p{float: left; line-height: 50px; margin-left: 5px; font-size: 15px;}
+#wrap>#header>.center>div>a>img{float: right; width: 20px; height: 20px; padding-top: 15px;}
+#wrap>#header>.center>a>img{float: right; height: 22px;padding-top: 14px;}
+#wrap>#lnb{width: 375px; height: 70px; background: #fff; border-radius: 15px 15px 0 0; position: fixed; bottom: 0; z-index: 999; box-shadow: 0 0 3px gray;}
+#wrap>#lnb>ul>li{float: left; width: 25%; height: 100%; text-align: center;}
+#wrap>#lnb>ul>li>a{padding-top: 10px;}
+#wrap>#lnb>ul>li>a p{color: #124179; font-size: 15px;}
+#wrap>#lnb>ul>li:nth-of-type(1)>a p{color: #FFCC00;}
+#wrap>#lnb>ul>li>a>img{width: auto; height: 25px;}
+
+#wrap>#slider{width: 100%; height: 375px; padding-top: 50px;}
+#wrap>#slider .swiper-slide>img{width: 100%; height: 100%;}
+
+#wrap>section{border-radius: 15px 15px 0 0; position: absolute; padding-top: 45px; box-sizing: border-box;}
+#wrap>#search{width: 100%; height: 205px; background: #fff; top: 410px;}
+#wrap>#search>.center{width: 91.467%; position: relative;}
+#wrap .center>h3{margin-bottom: 15px; font-family: 'OSeongandHanEum';}
+#wrap>#search>.center>input#search2{background: #DBEBFF; border-radius: 5px; border: none; width: 100%; height: 45px; box-shadow: none; font-size: 15px; float: left; color: #124179;padding: 0 45px 0 10px;}
+#wrap>#search>.center>span{position: absolute; right: 17px; z-index: 1; padding-top: 10px;}
+#wrap>#search>.center>span>img{width: 25px;}
+input::-webkit-input-placeholder{text-align: center;}
+
+
+#wrap>#best{width: 100%; height: 400px; background: #FFCC00;top: 600px;}
+#wrap>#best>.center .swiper-slide{margin-right: 5px;}
+#wrap>#best>.center img{width: 100%; height: 175px; border-radius: 15px;}
+#wrap>#best>.center a{text-align: center; color: #124179;}
+#wrap>#best>.cente h4{font-size: 18px;}
+#wrap>#best>.cente h5{font-size: 15px;}
+
+#wrap>#history{width: 100%; height: 426px; background: #fff;top: 985px;}
+#wrap>#history>.center>section{width: 100%; height: 153px; background: #fff; box-shadow: 0 0 3px rgb(151, 151, 151); border-radius: 15px; margin-bottom: 30px;}
+#wrap>#history>.center>section>a{padding: 16.5px 5.831%; box-sizing: border-box; color: #124179;}
+#wrap>#history>.center>section>a>img{width: 120px; height: 120px; border-radius: 50%;}
+#wrap>#history>.center>section>a>div{float: right;}
+#wrap>#history>.center>section>a>div>h5, #wrap>#history>.center>section>div>h4{float: right;}
+#wrap>#history>.center>section>a>div>h4{font-size: 18px; width: 150px; text-align: right; margin-bottom: 20px;}
+#wrap>#history>.center>a>input[type="button"]{width: 100%; height: 60px; background: #124179; border: 0; border-radius: 12px; color: #fff; font-size: 18px; font-weight: bolder;}
+
+#wrap>#notice, #wrap>#event, #wrap>#footer{padding-top: 15px;box-sizing: border-box;}
+#wrap>#notice h4, #wrap>#event h4{font-size: 18px; font-weight: bolder; float: left; width: 100%; color: #124179;}
+#wrap>#notice span, #wrap>#event span{font-size: 15px; font-weight: normal; float: right; line-height: 30px; color: #646464;}
+#wrap>#notice{width: 100%; height: 70px; background: #e6e6e6;top: 1396px;}
+#wrap>#event{width: 100%; height: 70px; background: #fff; top: 1451px;}
+#wrap>#footer{width: 100%; height: 185px; background: #124179;  position: absolute; top: 1506px; border-radius: 15px 15px 0 0;}
+#wrap>#footer>.center>address{color: #fff; font-style: normal; font-size: 13px; text-align: center;}
+
+/*모바일*/
+@media screen and (min-width: 260px){
+    body{width: 100%; margin: 0 auto; max-width: 460px;}
+    #wrap{width: 95%; max-width: 414px;}
+    .center{width: 91.467%;}
+    #wrap>#header, #wrap>#lnb{width:95%; max-width: 414px;}
+    #wrap>#header>.center>div{width: 74.344%; margin-left: 12.828%;}
+    #wrap>#header>.center>div>p{margin-left: 1.458%;}
+}
+/*탭*/
+/*PC*/

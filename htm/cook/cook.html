@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SIMPLY COOK</title>
+    <!--파비콘→웹폰트→전체 css→슬라이드/라이트박스 부분동작 css→ JQ엔진:동작에 따라 body에 삽입 가능→jsjq(자바스크립트/제이쿼리)외부링크:동작에 따라 body에 삽입 가능-->
+    <!--favicon-->
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap&subset=korean" rel="stylesheet">
+    <!--default css-->
+    <link rel="stylesheet" href="../../css/default.css">
+    <!--slide css source-->
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <!--google CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--sub js-->
+    <script src="../../js/sub.js"></script>
+    <style>
+        #wrap>#header{background: #FFCC00;}
+        #wrap>#lnb>ul>li:nth-of-type(2)>a p{color: #FFCC00;}
+
+        #wrap>#goTop{width: 60px; height: 60px; background: #FFCC00; border-radius: 15px; position: fixed; bottom: 90px; z-index: 998;right: 16px; color: #fff;;}
+        #wrap>#goTop>img{height: 10px; margin-left: 50%; transform: translateX(-50%);}
+        #wrap>#goTop>p{text-align: center;}
+        #wrap>#best{height: 400px; background: #FFCC00;top: 50px; border-radius: 0;}
+        #wrap>#best>.center .swiper-slide{margin-right: 5px;}
+        #wrap>#best>.center img{width: 100%; height: 175px; border-radius: 15px;}
+        #wrap>#best>.center a{text-align: center; color: #124179;}
+        #wrap>#best>.cente h4{font-size: 18px;}
+        #wrap>#best>.cente h5{font-size: 15px;}
+
+        #wrap>#search{height: 205px; background: #fff; top: 410px;}
+        #wrap>#search>.center{width: 91.467%; position: relative;}
+        #wrap .center>h3{margin-bottom: 15px; font-family: 'OSeongandHanEum'; font-size: 20px;}
+
+        #wrap>#search>.center>input#search2{background: #DBEBFF; border-radius: 5px; border: none; width: 100%; height: 45px; box-shadow: none; font-size: 15px; float: left; color: #124179;padding: 0 45px 0 10px;}
+        #wrap>#search>.center>span{position: absolute; right: 17px; z-index: 1; padding-top: 10px;}
+        #wrap>#search>.center>span>img{width: 25px;}
+        input::-webkit-input-placeholder{text-align: center;}
+
+
+        #wrap>#cookLlist{height: 920px; background: #124179; top: 600px;}
+        #wrap>#cookLlist .center>h3{color: #fff;}
+        #wrap>#cookLlist>.center>div{width: 100%; height: 135px; background: #fff; border-radius: 15px; margin-bottom: 15px;overflow:hidden;}
+
+        #wrap>#cookLlist>.center>div>a>img{float: left; margin-right: 15px; width: 150px;}
+        #wrap>#cookLlist>.center>div>p{padding: 25px 22px 0 0; font-family: 'OSeongandHanEum'; font-size: 20px; font-weight: bolder; margin-bottom: 15px; color: #124179;}
+        #wrap>#cookLlist>.center>div>a>h5{padding-right: 22px; font-size: 15px; color: #124179;}
+        #wrap>#cookLlist>.center>div span{float: right;}
+        #wrap>#cookLlist>.center>div span>img{height: 25px; vertical-align: middle;}
+
+        #wrap>#footer{position: absolute; top: 1500px;}
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header id="header"><div class="center">
+            <h1><a href="javascript:history.back()"><img src="../../img/back.png" alt="뒤로가기"></a></h1><p>COOK<span><a href="../cart.html"><img src="../../img/cart.png" alt="장바구니아이콘"></a></span></p>
+        </div></header>
+        <!--Top 버튼-->
+        <div id="goTop"><img src="../../img/gotop.png" alt="go top"><p>TOP</p></div>
+        <!-- 메뉴바 -->
+        <nav id="lnb"><ul>
+            <li><a href="../../index.html"><img src="../../img/lnb-main.png" alt="메인아이콘"><p>MAIN</p></a></li>
+            <li><a href="cook.html"><img src="../../img/lnb-cook2.png" alt="메뉴아이콘"><p>COOK</p></a></li>
+            <li><a href="../pick/pick.html"><img src="../../img/lnb-pick.png" alt="pick아이콘"><p>PICK</p></a></li>
+            <li><a href="../my/my.html"><img src="../../img/lnb-my.png" alt="마이페이지아이콘"><p>MY</p></a></li>
+        </ul></nav>
+        <!-- BEST 메뉴 노출 슬라이더 -->
+        <section id="best"><div class="center">
+            <h3>#이번주 BEST!</h3>
+            <div class="swiper-container" id="swiper-container2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide active-slider">
+                        <a href="cook-ngs.html">
+                            <img src="../../img/cooklist1.png" alt="낙곱새">
+                            <h4>낙곱새</h4>
+                            <h5>19,000원</h5>
+                        </a></div>
+                    <div class="swiper-slide">
+                        <a href="cook-stk.html">
+                            <img src="../../img/cooklist3.png" alt="스테이크3종">
+                            <h4>스테이크3종</h4>
+                            <h5>31,900원</h5>
+                        </a></div>
+                    <div class="swiper-slide">
+                        <a href="cook-sun.html">
+                            <img src="../../img/cooklist5.png" alt="해물짬뽕순두부">
+                            <h4>해물짬뽕순두부</h4>
+                            <h5>10,000원</h5>
+                        </a></div>
+                    <div class="swiper-slide">
+                        <a href="cook-baeksundae.html">
+                            <img src="../../img/baek1.png" alt="백순대볶음">
+                            <h4>백순대볶음</h4>
+                            <h5>6,900원</h5>
+                        </a></div>
+                </div>
+            </div>
+            <!-- Swiper JS -->
+            <script src="../../js/swiper.min.js"></script>
+            <!-- Initialize Swiper -->
+            <script>
+                var mySwiper2 = new Swiper('#swiper-container2', {
+                    watchSlidesProgress: true,
+                    watchSlidesVisibility: true,
+                    slidesPerView: 2,
+                    loop: true,
+                })
+            </script>
+        </div></section>
+        <!-- 메뉴 검색창 -->
+        <section id="search"><div class="center"><h3>#Search_COOK</h3><input type="search" id="search2" placeholder="메뉴명을 검색해주세요"><span><img src="../../img/search.png" alt="돋보기 검색"></span></div></section>
+        <!--음식 리스트-->
+        <section id="cookLlist"><div class="center">
+            <h3>#COOK_LIST</h3>
+            <div>
+                <a href="cook-ngs.html">
+                <img src="../../img/cooklist1.png" alt="낙곱새"></a>
+                <p>낙곱새
+                    <span>
+                        <img src="../../img/bookmark-off.png" alt="북마크">
+                    </span>
+                </p>
+                <a href="cook-ngs.html"><h5>★ 4.5 <span>35Reviews</span><br>15,000원<span>26min</span></h5></a>
+            </div>
+            <div>
+                <a href="cook-baeksundae.html">
+                    <img src="../../img/cooklist2.png" alt="백순대볶음"></a>
+                    <p>백순대볶음
+                        <span>
+                            <img src="../../img/bookmark-off.png" alt="북마크">
+                        </span>
+                    </p>
+                    <a href="cook-baeksundae.html"><h5>★ 4.5 <span>35Reviews</span><br>6,900원<span>6min</span></h5></a>
+                
+            </div>
+            <div>
+                    <a href="cook-stk.html"><img src="../../img/cooklist3.png" alt="스테이크 3종"></a>
+                <p>스테이크 3종
+                    <span>
+                        <img src="../../img/bookmark-off.png" alt="북마크">                        
+                    </span>
+                </p>
+                <a href="cook-stk.html"><h5>★ 4 <span>22Reviews</span><br>31,900원<span>30min</span></h5></a>
+            </div>
+            <div>
+                <a href="cook-cs.html"><img src="../../img/cooklist4.png" alt="치킨 스테이크"></a>
+                <p>치킨 스테이크
+                    <span>
+                        <img src="../../img/bookmark-off.png" alt="북마크">                        
+                    </span>
+                </p>
+                <a href="cook-cs.html"><h5>★ 4.5 <span>15Reviews</span><br>15,000원<span>20min</span></h5></a>
+            </div>
+            <div>
+                    <a href="cook-sun.html"><img src="../../img/cooklist5.png" alt="해물짬뽕순두부"></a>
+                <p>해물짬뽕순두부
+                    <span>
+                        <img src="../../img/bookmark-off.png" alt="북마크">                        
+                    </span>
+                </p>
+                <a href="cook-sun.html"><h5>★ 4.5 <span>35Reviews</span><br>10,000원<span>16min</span></h5></a>
+            </div>
+        </div></section>
+        <!-- footer -->
+        <footer id="footer"><div class="center"><address>©GS Retail Co., LTD.All right reserved.</address></div></footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SIMPLY COOK</title>
+    <!--favicon-->
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap&subset=korean" rel="stylesheet">
+    <!--default css-->
+    <link rel="stylesheet" href="../css/default.css">
+    <!--google CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--sub js-->
+    <script src="../js/sub.js"></script>
+    <style>
+        #wrap>#cartList{padding-top: 45px; top: 50px;}
+        #wrap>#cartList>.center>div{width: 100%; height: 325px; box-shadow: 0 0 3px grey; border-radius: 10px; padding: 20px; box-sizing: border-box;}
+
+        /*선택삭제/바로구매 꾸미기*/
+        #wrap>#cartlnb{width: 375px;height: 70px; position: fixed; background: #fff; bottom: 0; z-index: 999; border-radius: 15px 15px 0 0; box-shadow: 0 0 3px grey;}
+        #wrap>#cartlnb>ul{border-radius: 15px 15px 0 0;}
+        #wrap>#cartlnb>ul>li{width: 50%; float: left;}
+        #wrap>#cartlnb>ul>li>a{font-family: 'OSeongandHanEum'; font-size: 20px; line-height: 24px; font-weight: bolder; color: #124179; padding: 23px 0; box-sizing: border-box; text-align: center;}
+        #wrap>#cartlnb>ul>li>a>img{height: 24px; vertical-align: middle; margin-right: 5px;}
+
+        /*체크박스 꾸미기*/
+        #wrap>#cartList>.center>div>table{position: relative; width: 100%; border-spacing: 0 10px; margin-bottom: 10px;}
+        #wrap>#cartList>.center>div>table input[type="checkbox"]{display: inline-block; width: 20px; height: 20px; border: 2px solid grey; cursor: pointer; border-radius: 3px; vertical-align: middle;}
+        #wrap>#cartList>.center>div>table tr{display: block; clear: both; content:"";}
+        #wrap>#cartList>.center>div>table input[type="checkbox"]:checked{border: 0; background: url(../img/checkmark.png) #124179 no-repeat center/15px 15px;}
+
+        /*테이블 정렬*/
+        #wrap>#cartList>.center>div>table td{padding: 5px 0; font-size: 18px; line-height: 30px;}
+        #wrap>#cartList>.center>div>table td:nth-of-type(1){padding-right: 10px; float: left;}
+        #wrap>#cartList>.center>div>table td:nth-of-type(2){float: left;}
+        #wrap>#cartList>.center>div>table td:nth-of-type(3){float: right;}
+        #wrap>#cartList>.center>div span{float: right;}
+        #wrap>#cartList>.center>div p{font-size: 15px; margin-bottom: 15px; padding-top: 10px; border-top: 1px solid #b8b8b8;}
+        #wrap>#cartList>.center>div h4{font-size: 18px; font-family: 'OSeongandHanEum';}
+
+        /*푸터*/
+        #wrap>#footer{position: absolute; top: 517px;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header id="header"><div class="center">
+            <h1><a href="javascript:history.back()"><img src="../img/back.png" alt="뒤로가기"></a></h1><p>장바구니<span><a href="#"><img src="../img/cart2.png" alt="장바구니아이콘"></a></span></p>
+        </div></header>
+        <!-- 메뉴바 -->
+        <nav id="cartlnb"><ul>
+            <li><a href="javascript:;"><img src="../img/check-x.png" alt="선택삭제">선택삭제</a></li>
+            <li><a href="javascript:;"><img src="../img/barcode.png" alt="바로구매">바로구매</a></li>
+        </ul></nav>
+        <!-- cart_LIST -->
+        <section id="cartList">
+            <div class="center">
+                <h3>#장바구니</h3>
+                <div>
+                    <table>
+                        <tr>
+                            <td><input type="checkbox" name="해물짬뽕순두부" id="sun"><label for="sun"><span></span></label></td>
+                            <td><label for="sun"><span>해물짬뽕순두부</span></label></td>
+                            <td><label for="sun"><span>10,000원</span></label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="스테이크 3종" id="ste"></td>
+                            <td><label for="ste"><span>스테이크 3종</span></label></td>
+                            <td><label for="ste"><span>31,000원</span></label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="곱도리탕" id="tan"></td>
+                            <td><label for="tan"><span>곱도리탕</span></label></td>
+                            <td><label for="tan"><span>9,900원</span></label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="토시살스테이크페퍼" id="tos"></td>
+                            <td><label for="tos"><span>토시살스테이크페퍼</span></label></td>
+                            <td><label for="tos"><span>7,700원</span></label></td>
+                        </tr>
+                    </table>
+                    <p>배송비<span>무료</span></p>
+                    <h4>결제금액<span>7,700원</span></h4>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer id="footer"><div class="center"><address>©GS Retail Co., LTD.All right reserved.</address></div></footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SIMPLY COOK</title>
+    <!--favicon-->
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap&subset=korean" rel="stylesheet">
+    <!--default css-->
+    <link rel="stylesheet" href="../../css/default.css">
+    <!--PICK css-->
+    <link rel="stylesheet" href="../../css/pick.css">
+    <!--slide css source-->
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <!--google CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--sub js-->
+    <script src="../../js/sub.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header id="header"><div class="center">
+            <h1><a href="javascript:history.back()"><img src="../../img/back.png" alt="뒤로가기"></a></h1><p>PICK<span><a href="cart.html"><img src="../../img/cart.png" alt="장바구니아이콘"></a></span></p>
+        </div></header>
+        <!-- 메뉴바 -->
+        <nav id="lnb"><ul>
+            <li><a href="../../index.html"><img src="../../img/lnb-main.png" alt="메인아이콘"><p>MAIN</p></a></li>
+            <li><a href="../cook/cook.html"><img src="../../img/lnb-cook.png" alt="메뉴아이콘"><p>COOK</p></a></li>
+            <li><a href="pick.html"><img src="../../img/lnb-pick2.png" alt="pick아이콘"><p>PICK</p></a></li>
+            <li><a href="../my/my.html"><img src="../../img/lnb-my.png" alt="마이페이지아이콘"><p>MY</p></a></li>
+        </ul></nav>
+        <!-- PICK_LIST -->
+        <section id="pickList"><div class="center">
+            <h3>#PICK_LIST<span>2</span></h3>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide menu"><img src="../../img/trash.png" alt="휴지통"></div>
+                    <div class="swiper-slide content">
+                        <div class="menu-button">
+                        </div>
+                        <div><img src="../../img/cooklist1.png" alt="해물짬뽕순두부"><div><h4>해물짬뽕순두부</h4><h5>★4.5 <span class="price">6900원</span></h5><div class="selectQuan"><div><input type="button" value="-"data-quantity="minus" data-field="quantity"></div><input type="number" name="quantity" value="1" min="1" max="100"><div><input type="button" value="+" data-quantity="plus" data-field="quantity"></div><span class="add">추가</span></div></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide menu"><img src="../../img/trash.png" alt="휴지통"></div>
+                    <div class="swiper-slide content">
+                        <div class="menu-button">
+                        </div>
+                        <div>
+                            <img src="../../img/cooklist3.png" alt="스테이크 3종">
+                            <div>
+                                <h4>스테이크 3종</h4>
+                                <h5>★4 <span class="price2">31900원</span></h5>
+                                <div class="selectQuan">
+                                    <div>
+                                        <input type="button" value="-"data-quantity="minus" data-field="quantity"></div><input type="number" name="quantity" value="1" min="1" max="100"><div><input type="button" value="+" data-quantity="plus" data-field="quantity"></div><span class="add">추가</span></div></div></div>
+                    </div>
+                </div>
+            </div>              
+        
+            <!-- Swiper JS -->
+            <script src="../../js/swiper.min.js"></script>
+        
+            <!-- Initialize Swiper -->
+            <script>
+                var menuButton = document.querySelector('.menu-button');
+                var openMenu = function () {
+                swiper.slideNext();
+                };
+                var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 'auto',
+                initialSlide: 1,
+                resistanceRatio: 0,
+                slideToClickedSlide: true,
+                on: {
+                    slideChangeTransitionStart: function () {
+                    var slider = this;
+                    if (slider.activeIndex === 0) {
+                        menuButton.classList.add('cross');
+                        // required because of slideToClickedSlide
+                        menuButton.removeEventListener('click', openMenu, true);
+                    } else {
+                        menuButton.classList.remove('cross');
+                    }
+                    }
+                    , slideChangeTransitionEnd: function () {
+                    var slider = this;
+                    if (slider.activeIndex === 1) {
+                        menuButton.addEventListener('click', openMenu, true);
+                    }
+                    },
+                }
+                });
+            </script>            
+        </div></section>
+        <!-- PICK_LIST -->
+        <section id="pickList2">
+            <div class="center">
+                <h3>#PICK_LIST<span>0</span></h3>
+                <div>
+                    <img src="../../img/empty.png" alt="담긴 메뉴가 없습니다.">
+                    <p>담긴 메뉴가 없습니다.</p>
+                    <div>
+                        <a href="../cook/cook.html">메뉴목록 바로가기</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer id="footer"><div class="center"><address>©GS Retail Co., LTD.All right reserved.</address></div></footer>
+    </div>
+</body>
+</html>

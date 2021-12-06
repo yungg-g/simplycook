@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SIMPLY COOK</title>
+    <!--favicon-->
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap&subset=korean" rel="stylesheet">
+    <!--index css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--slide css source-->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!--google CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--index js-->
+    <script src="js/style.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header id="header"><div class="center">
+            <div class="headerCenter">
+                <h1><a href="index.html"><img src="img/logo.png" alt="심플리쿡로고"></a></h1><p>서울시 강동구 천호동…</p><a href="htm/delivery.html"><img src="img/addressChange.png" alt="주소지변경버튼"></a>
+            </div>
+            <a href="htm/cart.html"><img src="img/cart.png" alt="장바구니아이콘"></a>
+        </div></header>
+        <!-- 메뉴바 -->
+        <nav id="lnb"><ul>
+            <li><a href="index.html"><img src="img/lnb-Main2.png" alt="메인아이콘"><p>MAIN</p></a></li>
+            <li><a href="htm/cook/cook.html"><img src="img/lnb-cook.png" alt="메뉴아이콘"><p>COOK</p></a></li>
+            <li><a href="htm/pick/pick.html"><img src="img/lnb-pick.png" alt="pick아이콘"><p>PICK</p></a></li>
+            <li><a href="htm/my/my.html"><img src="img/lnb-my.png" alt="마이페이지아이콘"><p>MY</p></a></li>
+        </ul></nav>
+        <!-- 메인슬라이더 -->
+        <article id="slider">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/event1.png" alt="생일축하이벤트"></div>
+                <div class="swiper-slide"><img src="img/event2.png" alt="쿠킹캠핑이벤트"></div>
+                <div class="swiper-slide"><img src="img/event3.png" alt="심플리쿡쿨러백이벤트"></div>
+                <div class="swiper-slide"><img src="img/event4.png" alt="따끈한심플리쿡이벤트"></div>
+                <div class="swiper-slide"><img src="img/event5.png" alt="체험단이벤트"></div>
+                <div class="swiper-slide"><img src="img/event6.png" alt="한우광고"></div>
+                <div class="swiper-slide"><img src="img/event7.png" alt="심플리쿡pick"></div>              
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            
+            <!-- Swiper JS -->
+            <script src="js/swiper.min.js"></script>
+            
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    loop: true,
+                    autoplay: {
+                        delay: 3500,
+                        disableOnInteraction: false,
+                    },
+                pagination: {
+                    el: '.swiper-pagination',
+                    dynamicBullets: true,                    
+                },
+                });
+            </script>
+            <!-- Swiper -->
+        </article>
+        <!-- 메뉴 검색창 -->
+        <section id="search"><div class="center"><h3>#Search_COOK</h3><input type="search" id="search2" placeholder="메뉴명을 검색해주세요"><span><img src="img/search.png" alt="돋보기 검색"></span></div></section>
+        <!-- BEST 메뉴 노출 슬라이더 -->
+        <section id="best"><div class="center">
+            <h3>#이번주 BEST!</h3>
+            <div class="swiper-container" id="swiper-container2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide active-slider">
+                        <a href="htm/cook/cook-ngs.html">
+                            <img src="img/cooklist1.png" alt="낙곱새">
+                            <h4>낙곱새</h4>
+                            <h5>19,000원</h5>
+                        </a></div>
+                    <div class="swiper-slide">
+                        <a href="htm/cook/cook-stk.html">
+                            <img src="img/cooklist3.png" alt="스테이크3종">
+                            <h4>스테이크3종</h4>
+                            <h5>31,900원</h5>
+                        </a></div>
+                    <div class="swiper-slide">
+                        <a href="htm/cook/cook-sun.html">
+                            <img src="img/cooklist5.png" alt="해물짬뽕순두부">
+                            <h4>해물짬뽕순두부</h4>
+                            <h5>10,000원</h5>
+                        </a></div>
+                    <div class="swiper-slide">
+                        <a href="htm/cook/cook-baeksundae.html">
+                            <img src="img/baek1.png" alt="백순대볶음">
+                            <h4>백순대볶음</h4>
+                            <h5>6,900원</h5>
+                        </a></div>
+                </div>
+            </div>
+            <!-- Swiper JS -->
+            <script src="js/swiper.min.js"></script>
+            <!-- Initialize Swiper -->
+            <script>
+                var mySwiper2 = new Swiper('#swiper-container2', {
+                    watchSlidesProgress: true,
+                    watchSlidesVisibility: true,
+                    slidesPerView: 2,
+                    loop: true,
+                })
+            </script>
+        </div></section>
+        <!-- 최근구매내역-->
+        <section id="history"><div class="center">
+            <h3>#최근구매내역</h3>
+            <section><a href="htm/my/my-list.html"><img src="img/cooklist5.png" alt="해물짬뽕순두부"><div><h5>2019-09-29</h5><br>
+                <h4>해물짬뽕순두부 외 3건</h4>
+                <h5>총 58,600원</h5></div></section>
+                <a href="htm/my/my-list.html"><input type="button" value="구매내역 더보기"></a>
+            </div></a></section>
+        <!-- 공지사항/이벤트 -->
+        <section id="notice"><div class="center"><a href="htm/my/notice.html"><h4>공지사항<span>10월 고객센터 휴무 및 배송 지연 안내</span></h4></a></div></section>
+        <section id="event"><div class="center"><a href="htm/my/notice.html"><h4>이벤트<span>인스타그램 해시태그 인증시 1000원할인!</span></h4></a></div></section>
+        <!-- footer -->
+        <footer id="footer"><div class="center"><address>(주)GS리테일<br>
+            서울특별시 강남구 논현로 508 GS강남타워<br>
+            고객문의: 1833-9779<br>
+            ©GS Retail Co., LTD.All right reserved.</address></div></footer>
+    </div>
+</body>
+</html>

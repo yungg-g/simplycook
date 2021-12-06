@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SIMPLY COOK</title>
+    <!--favicon-->
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap&subset=korean" rel="stylesheet">
+    <!--default css-->
+    <link rel="stylesheet" href="../../css/default.css">
+    <!--slide css source-->
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <!--google CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--sub js-->
+    <script src="../../js/sub.js"></script>
+    <style>
+        #wrap>#header{background: #DBEBFF;}
+#wrap>#lnb>ul>li:nth-of-type(4)>a p{color: #FFCC00;}
+
+#wrap>#my{top: 50px; background: #DBEBFF; border-radius: 0;}
+#wrap>#my>.center .login{width: 100%; height: 50px; border-radius: 5px; background: #124179; line-height: 50px; text-align: center; margin-bottom: 40px;}
+#wrap>#my>.center .login>a{font-size: 20px; font-family: 'OSeongandHanEum'; color: #fff;}
+#wrap>#my>.center>.myMain>h3, #wrap>#my>.center>.welcome>h3{margin-bottom: 15px; font-size: 20px; font-family: 'OSeongandHanEum';}
+#wrap>#my>.center>.myMain>.myMenu, #wrap>#my>.center>.welcome>.myMenu{width: 100%; height: 54px; margin-bottom: 30px;}
+#wrap>#my>.center>.myMain>.myMenu>ul>li, #wrap>#my>.center>.welcome>.myMenu>ul>li{float: left; width: 25%; height: 54px; text-align: center;}
+#wrap>#my>.center>.myMain>.myMenu>ul>li>a, #wrap>#my>.center>.welcome>.myMenu>ul>li>a{color: #124179;font-family: 'OSeongandHanEum'; font-size: 15px;}
+#wrap>#my>.center>.myMain>.myMenu>ul>li>a>img, #wrap>#my>.center>.welcome>.myMenu>ul>li>a>img{height:25px; width: auto;}
+#wrap>#my>.center>.myMain>.inforQna, #wrap>#my>.center>.welcome>.inforQna{padding-bottom: 40px;}
+#wrap>#my>.center>.myMain>.inforQna>ul>li, #wrap>#my>.center>.welcome>.inforQna>ul>li{width: 100%; height: 50px; line-height: 50px;}
+#wrap>#my>.center>.myMain>.inforQna>ul>li>a, #wrap>#my>.center>.welcome>.inforQna>ul>li>a{color: #124179; font-family: 'OSeongandHanEum'; font-size: 15px;}
+#wrap>#my>.center>.myMain>.inforQna>ul>li>a>img, #wrap>#my>.center>.welcome>.inforQna>ul>li>a>img{float: right; height: 12px; margin: 19px 0;}
+
+/*아이디/패스워드 입력 css*/
+#wrap>#my>.center>.loging>input{width: 100%; height: 50px; border-bottom: 2px solid #124179; background: #DBEBFF; color: #124179; font-size: 18px;}#wrap>#my>.center>.loging>input[type=password]{margin-bottom: 30px;}#wrap>#my>.center>.loging .login{margin-bottom: 15px;}
+#wrap>#my>.center>.loging>.troubleSign>a{text-align: center; font-size: 15px;margin-bottom: 85px; color: #124179;}#wrap>#my>.center>.loging>.createAccount{text-align: center; margin-bottom: 40px;}
+#wrap>#my>.center>.loging>.createAccount>a{color: #B8B8B8; font-size: 13px;}#wrap>#my>.center>.loging>.createAccount>a>span{color: #124179;}
+
+
+#wrap>#footer{position: absolute; top: 430px; height: 230px; padding-top: 60px;}
+#wrap>#footer>.center>p{font-family: 'OSeongandHanEum'; font-size: 20px; font-weight: bolder; margin-bottom: 50px;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header id="header"><div class="center">
+            <h1><a href="javascript:history.back()"><img src="../../img/back.png" alt="뒤로가기"></a></h1><p>MY</p>
+        </div></header>
+        <!-- 메뉴바 -->
+        <nav id="lnb"><ul>
+            <li><a href="../../index.html"><img src="../../img/lnb-main.png" alt="메인아이콘"><p>MAIN</p></a></li>
+            <li><a href="../cook/cook.html"><img src="../../img/lnb-cook.png" alt="메뉴아이콘"><p>COOK</p></a></li>
+            <li><a href="../pick/pick.html"><img src="../../img/lnb-pick.png" alt="pick아이콘"><p>PICK</p></a></li>
+            <li><a href="my.html"><img src="../../img/lnb-my2.png" alt="마이페이지아이콘"><p>MY</p></a></li>
+        </ul></nav>
+        
+        <section id="my"><div class="center">
+            <div class="welcome">
+                <h3>#안녕하세요 SIMPLY님 :)</h3>
+                <div class="login"><a href="my.html">로그아웃</a></div>
+                <div class="myMenu"><ul>
+                    <li>
+                        <a href="my-point.html">
+                            <img src="../../img/my-point.png" alt="포인트">
+                            <p>123,255P</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="my-cupon.html">
+                            <img src="../../img/my-cupon.png" alt="쿠폰">
+                            <p>쿠폰 3개</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="my-list.html">
+                            <img src="../../img/my-list.png" alt="구매내역">
+                            <p>구매내역</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="my-review.html">
+                            <img src="../../img/my-review.png" alt="리뷰">
+                            <p>리뷰관리</p>
+                        </a>
+                    </li>
+                </ul></div>
+                <div class="inforQna">
+                    <ul>
+                        <li><a href="notice.html">공지사항<img src="../../img/my-more.png" alt="공지사항 더보기"></a></li>
+                        <li><a href="qna.html">1:1문의<img src="../../img/my-more.png" alt="공지사항 더보기"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer id="footer"><div class="center"><p>고객센터 1833-9779</p><address>©GS Retail Co., LTD.All right reserved.</address></div></footer>
+    </div>
+</body>
+</html>

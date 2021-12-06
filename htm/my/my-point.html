@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SIMPLY COOK</title>
+    <!--favicon-->
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap&subset=korean" rel="stylesheet">
+    <!--default css-->
+    <link rel="stylesheet" href="../../css/default.css">
+    <!--slide css source-->
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <!--google CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--sub js-->
+    <script src="../../js/sub.js"></script>
+    <style>
+        #wrap>#lnb>ul>li:nth-of-type(4)>a p{color: #FFCC00;}
+
+        #wrap>#myPoint{padding-top: 95px; border-radius: 0; position: unset;}
+        #wrap>#myPoint>.center h3:last-of-type{float: right; margin-bottom: 50px;}#wrap>#myPoint>.center h3:last-of-type>span{color: #FFCC00;}
+        #wrap>#myPoint>.center>.point>.total{height: 50px; background: #DBEBFF; border-radius: 5px; margin-bottom: 30px;}
+        #wrap>#myPoint>.center>.point>.total>ul>li{float: left; width: 50%; text-align: center; font-size: 18px; line-height: 50px;}#wrap>#myPoint>.center>.point>.total>ul>li>img{height: 20px; vertical-align: middle;}
+
+        #wrap>#myPoint>.center>.point, #wrap>#myPoint>.center>.point>.pointCheck{clear: both;}
+        #wrap>#myPoint>.center>.point>.pointCheck h5{color: #B8B8B8; font-size: 13px;}#wrap>#myPoint>.center>.point>.pointCheck p{font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow:ellipsis;}
+        #wrap>#myPoint>.center>.point>.pointCheck span{float: right; font-size: 18px;}
+        .pointCheck input:nth-of-type(1), .pointCheck input:nth-of-type(1)~div:nth-of-type(1), .pointCheck input:nth-of-type(2), .pointCheck input:nth-of-type(2)~div:nth-of-type(2), .pointCheck input:nth-of-type(3), .pointCheck input:nth-of-type(3)~div:nth-of-type(3), .pointCheck input:nth-of-type(4), .pointCheck input:nth-of-type(4)~div:nth-of-type(4), .pointCheck input:nth-of-type(5), .pointCheck input:nth-of-type(5)~div:nth-of-type(5){display: none;}
+
+        .pointCheck input:nth-of-type(1):checked~div:nth-of-type(1), .pointCheck input:nth-of-type(2):checked~div:nth-of-type(2), .pointCheck input:nth-of-type(3):checked~div:nth-of-type(3), .pointCheck input:nth-of-type(4):checked~div:nth-of-type(4), .pointCheck input:nth-of-type(5):checked~div:nth-of-type(5){display: block;}
+
+        .pointCheck>label{display:block; width: 20%; height: 40px; float: left; text-align: center; line-height: 40px; margin-bottom: 20px;}
+        .pointCheck .week_content, .pointCheck .month_content, .pointCheck .month3_content, .pointCheck .month6_content, .pointCheck .year_content{clear: both;}
+        .pointCheck .week_content>div, .pointCheck .month_content>div, .pointCheck .month3_content>div, .pointCheck .month6_content>div, .pointCheck .year_content>div{width: 100%; height: 60px;}
+
+        .pointCheck input:nth-of-type(1):checked~label:nth-of-type(1), .pointCheck  input:nth-of-type(2):checked~label:nth-of-type(2), .pointCheck  input:nth-of-type(3):checked~label:nth-of-type(3),.pointCheck  input:nth-of-type(4):checked~label:nth-of-type(4), .pointCheck  input:nth-of-type(5):checked~label:nth-of-type(5){border-bottom: 2px solid #124179;}
+
+        #wrap>#footer{height: 120px; padding-top: 15px; background: #124179;}
+        #wrap>#footer>.center>p{font-family: 'OSeongandHanEum'; font-size: 20px; font-weight: bolder; margin-bottom: 50px;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header id="header"><div class="center">
+            <h1><a href="javascript:history.back()"><img src="../../img/back.png" alt="뒤로가기"></a></h1><p>포인트</p>
+        </div></header>
+        <!-- 메뉴바 -->
+        <nav id="lnb"><ul>
+            <li><a href="../../index.html"><img src="../../img/lnb-main.png" alt="메인아이콘"><p>MAIN</p></a></li>
+            <li><a href="../cook/cook.html"><img src="../../img/lnb-cook.png" alt="메뉴아이콘"><p>COOK</p></a></li>
+            <li><a href="./pick/pick.html"><img src="../../img/lnb-pick.png" alt="pick아이콘"><p>PICK</p></a></li>
+            <li><a href="my.html"><img src="../../img/lnb-my2.png" alt="마이페이지아이콘"><p>MY</p></a></li>
+        </ul></nav>
+        <!--point-->
+        <section id="myPoint">
+            <div class="center">
+                <h3>#SIMPLY님의 포인트는</h3>
+                <h3>총 <span>123,255P</span>입니다.</h3>
+                <div class="point">                    
+                    <div class="total"><ul>
+                        <li><img src="../../img/point-p.png" alt="적립포인트"> 적립 123,255P</li>
+                        <li><img src="../../img/point-m.png" alt="사용포인트"> 사용 0P</li>
+                    </ul></div>
+                    <div class="pointCheck">
+                        <input type="radio" name="tab" id="week" checked>
+                        <input type="radio" name="tab" id="month">
+                        <input type="radio" name="tab" id="month3">
+                        <input type="radio" name="tab" id="month6">
+                        <input type="radio" name="tab" id="year">
+                        <label for="week">1주일</label>
+                        <label for="month">한달</label>
+                        <label for="month3">3개월</label>
+                        <label for="month6">6개월</label>
+                        <label for="year">12개월</label>
+                        <div class="week_content">
+                            <!--(div>h5+p>span)*2-->
+                            <div>
+                                <h5>2019-09-29</h5>
+                                <p>해물짬뽕순두부 외 3<span>+586P</span></p>
+                            </div>
+                            <div>
+                                <h5>2019-08-29</h5>
+                                <p>해물짬뽕순두부 외 3<span>+586P</span></p>
+                            </div>
+                            <div>
+                                <h5>2019-09-29</h5>
+                                <p>해물짬뽕순두부 외 3<span>+586P</span></p>
+                            </div>
+                            <div>
+                                <h5>2019-08-29</h5>
+                                <p>해물짬뽕순두부 외 3<span>+586P</span></p>
+                            </div>
+                            <div>
+                                <h5>2019-08-29</h5>
+                                <p>해물짬뽕순두부 외 3<span>+586P</span></p>
+                            </div>                          
+                        </div>
+                        <div class="month_content">
+                            <div>
+                                <h5>2019-09-29</h5>
+                                <p>해물짬뽕순두부 외 3<span>+586P</span></p>
+                            </div>
+                            <div>
+                                <h5>2019-08-29</h5>
+                                <p>해물짬뽕순두부 외 3<span>+586P</span></p>
+                            </div>
+                            <div>
+                                <h5>2019-08-29</h5>
+                                <p>해물짬뽕순두부 외 3<span>+586P</span></p>
+                            </div>
+                            <div>
+                                <h5>2019-09-29</h5>
+                                <p>해물짬뽕순두부 외 3<span>+586P</span></p>
+                            </div>
+                            <div>
+                                <h5>2019-08-29</h5>
+                                <p>해물짬뽕순두부 외 3<span>+586P</span></p>
+                            </div>
+                            <div>
+                                <h5>2019-08-29</h5>
+                                <p>해물짬뽕순두부 외 3<span>+586P</span></p>
+                            </div>
+                        </div>
+                        <div class="month3_content">
+                            <div>
+                                <h5>2019-09-29</h5>
+                                <p>해물짬뽕순두부 외 3<span>+586P</span></p>
+                            </div>
+                            <div>
+                                <h5>2019-08-29</h5>
+                                <p>해물짬뽕순두부 외 3<span>+586P</span></p>
+                            </div>
+                            <div>
+                                <h5>2019-09-29</h5>
+                                <p>해물짬뽕순두부 외 3<span>+586P</span></p>
+                            </div>
+                            <div>
+                                <h5>2019-08-29</h5>
+                                <p>해물짬뽕순두부 외 3<span>+586P</span></p>
+                            </div>
+                            <div>
+                                <h5>2019-08-29</h5>
+                                <p>해물짬뽕순두부 외 3<span>+586P</span></p>
+                            </div>
+                        </div>
+                        <div class="month6_content">
+                            <div>
+                                <h5>2019-09-29</h5>
+                                <p>해물짬뽕순두부 외 3<span>+586P</span></p>
+                            </div>
+                            <div>
+                                <h5>2019-08-29</h5>
+                                <p>해물짬뽕순두부 외 3<span>+586P</span></p>
+                            </div>
+                            <div>
+                                <h5>2019-09-29</h5>
+                                <p>해물짬뽕순두부 외 3<span>+586P</span></p>
+                            </div>
+                            <div>
+                                <h5>2019-08-29</h5>
+                                <p>해물짬뽕순두부 외 3<span>+586P</span></p>
+                            </div>
+                            <div>
+                                <h5>2019-08-29</h5>
+                                <p>해물짬뽕순두부 외 3<span>+586P</span></p>
+                            </div>
+                        </div>
+                        <div class="year_content">
+                            <div>
+                                <h5>2019-08-29</h5>
+                                <p>해물짬뽕순두부 외 3<span>+586P</span></p>
+                            </div>
+                            <div>
+                                <h5>2019-09-29</h5>
+                                <p>해물짬뽕순두부 외 3<span>+586P</span></p>
+                            </div>
+                            <div>
+                                <h5>2019-08-29</h5>
+                                <p>해물짬뽕순두부 외 3<span>+586P</span></p>
+                            </div>
+                            <div>
+                                <h5>2019-08-29</h5>
+                                <p>해물짬뽕순두부 외 3<span>+586P</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer id="footer"><div class="center"><address>©GS Retail Co., LTD.All right reserved.</address></div></footer>
+    </div>
+</body>
+</html>

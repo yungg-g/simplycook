@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SIMPLY COOK</title>
+    <!--파비콘→웹폰트→전체 css→슬라이드/라이트박스 부분동작 css→ JQ엔진:동작에 따라 body에 삽입 가능→jsjq(자바스크립트/제이쿼리)외부링크:동작에 따라 body에 삽입 가능-->
+    <!--favicon-->
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap&subset=korean" rel="stylesheet">
+    <!--default css-->
+    <link rel="stylesheet" href="../../css/default.css">
+    <!--slide css source-->
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <!--cook-baeksundae css-->
+    <link rel="stylesheet" href="../../css/cook-sub.css">
+    <!--google CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--sub js-->
+    <script src="../../js/sub.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header id="header"><div class="center">
+            <h1><a href="javascript:history.back()"><img src="../../img/back.png" alt="뒤로가기"></a></h1><p>COOK<span><a href="../cart.html"><img src="../../img/cart.png" alt="장바구니아이콘"></a></span></p>
+        </div></header>
+        <!--Top 버튼-->
+        <div id="goTop"><img src="../../img/gotop.png" alt="go top"><p>TOP</p></div>
+        <!-- COOK 메뉴바 -->
+        <div class="selectXbox">X</div>
+        <nav id="cooklnb"><!--수량선택박스--><div class="selectQuan"><div><input type="button" value="-"data-quantity="minus" data-field="quantity"></div><input type="number" name="quantity" value="1" min="1" max="100"><div><input type="button" value="+" data-quantity="plus" data-field="quantity"></div><span class="price">6900원</span></div>
+            <ul>
+            <li><a href="javascript:;"><img src="../../img/cart.png" alt="담기"><span>담기</span></a></li>
+            <li><a href="javascript:;"><img src="../../img/barcode.png" alt="바로결제"><span>바로결제</span></a></li>
+        </ul></nav>
+        <!-- 이미지슬라이더 -->
+        <article id="slider">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../../img/ngs01.png" alt="낙곱새1"></div>
+                <div class="swiper-slide"><img src="../../img/ngs02.png" alt="낙곱새2"></div>
+                <div class="swiper-slide"><img src="../../img/ngs03.png" alt="낙곱새3"></div>
+                <div class="swiper-slide"><img src="../../img/ngs04.png" alt="낙곱새4"></div>           
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            
+            <!-- Swiper JS -->
+            <script src="../../js/swiper.min.js"></script>
+            
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    loop: true,
+                    autoplay: {
+                        delay: 3500,
+                        disableOnInteraction: false,
+                    },
+                pagination: {
+                    el: '.swiper-pagination',
+                    dynamicBullets: true,                    
+                },
+                });
+            </script>
+            <!-- Swiper -->
+        </article>
+        
+        <!-- 메뉴 상세내용 head -->
+        <section id="cookDetail"><div class="center">
+            <h3>낙곱새<span><img src="../../img/bookmark-off.png" alt="북마크"></span></h3>
+            <h4>★4.5<span>15,000원</span></h4>
+            </div>
+            <div class="detailBtn"><div class="detail"><a href="#cooking">상세보기</a></div>
+            <div class="review"><a href="#review">35 Reviews</a></div>
+        </section>
+        <!-- 메뉴 상세내용 body -->
+        <section id="cooking"><div class="center"><img src="../../img/cook-ngs1.jpg" alt="낙곱새 상세내용"></div></section>
+        <section id="review" class="reviewNgs"><div class="center"><div>
+            <section>
+                <div>
+                    <h3>Simply123</h3>
+                    <h5>3days ago</h5>
+                    <span>★★★★★</span>
+                </div>
+                <p>Awesome, pretty cute<br>Love the prints and quality!</p>
+            </section>
+            <section>
+                <div>
+                    <h3>Simply123</h3>
+                    <h5>3days ago</h5>
+                    <span>★★★★☆</span>
+                </div>
+                <p>Awesome, pretty cute<br>Love the prints and quality!</p>
+            </section>
+            <section>
+                <div>
+                    <h3>Simply123</h3>
+                    <h5>3days ago</h5>
+                    <span>★★★★☆</span>
+                </div>
+                <p>Awesome, pretty cute<br>Love the prints and quality!</p>
+            </section>
+            <a href="#"><p>Read more</p>
+                <img src="../../img/readmore.png" alt="Read more"></a>
+        </div></div></section>
+        
+        <!-- footer -->
+        <footer id="footer" class="footerNgs"><div class="center"><address>©GS Retail Co., LTD.All right reserved.</address></div></footer>
+    </div>
+</body>
+</html>
