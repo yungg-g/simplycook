@@ -1,0 +1,27 @@
+#wrap>#lnb>ul>li:nth-of-type(3)>a p{color: #FFCC00;}
+
+/*수량선택박스*/
+.selectQuan{width: 100%; height: 25px; padding-top: 35px;}
+.selectXbox{width: 50px; height: 50px; border-radius: 50%; background: #fff; margin-left: 50%; transform: translateX(-50%); position: fixed; bottom: 125px; z-index: 998; text-align: center; line-height: 50px; box-shadow: 0 0 3px grey;}
+.selectQuan>div>input{width: 20%;max-width: 25px; height: 25px; border-radius: 50%; float: left; font-size: 20px; color: #fff; -webkit-appearance:button;}
+.selectQuan>input{float: left; width: 20%; max-width: 60px; height: 25px;border-radius: 17.5px; text-align: center;}
+.selectQuan>span{float: right; line-height: 25px; font-size: 15px;}
+
+#wrap>#pickList{height: 400px; top: 50px; border-radius: 0;}
+#wrap>#pickList>.center{width: 91.467%;}
+#wrap .center>h3>span{font-size: 15px; padding: 2px 5.831%; background: #FFCC00; border-radius: 5px; float: right;}
+#wrap>#pickList>.center .menu{width:60px; height: 160px; border-radius: 10px; background: #124179; text-align: center; margin-right: 10px;}
+#wrap>#pickList>.center .menu>img{height: 33px; padding-top: 63.5px;}
+#wrap>#pickList>.center .content{background: #fff; width: 100%; height: 160px; border-radius: 10px; box-shadow: 0 0 3px grey inset; box-sizing: border-box; padding: 20px;}
+#wrap>#pickList>.center .content>div>img{ width: 40%; max-width: 120px; height: 120px; border-radius: 50%; float: left;}
+#wrap>#pickList>.center .content>div>div{float: right; width: 55%; border-left: 1px solid lightgrey; padding-left: 10px; box-sizing: border-box;}
+#wrap>#pickList>.center .content h4{font-size: 18px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+#wrap>#pickList>.center .content h5{font-size: 15px; padding-top: 10px}#wrap>#pickList>.center .content h5>span{float: right;}
+
+/*빈페이지*/
+#wrap>#pickList2{height: 400px; top: 50px; border-radius: 0; display: none;}
+#wrap>#pickList2>.center>div{width: 100%; text-align:center; padding-top: 130px; box-sizing: border-box;}#wrap>#pickList2>.center>div>img{height: 45px; margin-bottom: 25px;}#wrap>#pickList2>.center>div>p{font-size: 18px; color: #B8B8B8; font-family: 'OSeongandHanEum'; margin-bottom: 20px; font-weight: bolder;}#wrap>#pickList2>.center>div>div{width: 230px; height: 50px; background: #124179; border-radius: 10px; margin-left: 50%; transform: translateX(-50%);}#wrap>#pickList2>.center>div>div>a{line-height: 50px; font-size: 18px; color: #fff; font-family: 'OSeongandHanEum';}
+
+.swiper-wrapper{margin-bottom: 15px;}
+
+#wrap>#footer{position: absolute; top: 517px;}
